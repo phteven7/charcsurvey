@@ -106,7 +106,7 @@ function removeElements(elements){
 }
 
 function shopNow() {
-    window.location.href = 'https://sagracia08.wixsite.com/my-site/teas'
+    window.location.href = 'https://sagracia08.wixsite.com/my-site/boards'
 }
 
 function resetQuiz() {
