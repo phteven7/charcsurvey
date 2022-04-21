@@ -106,7 +106,7 @@ function removeElements(elements){
 }
 
 function shopNow() {
-    window.location.href = 'https://sagracia08.wixsite.com/my-site/boards'
+    window.open('https://sagracia08.wixsite.com/my-site/boards', '_blank').focus();
 }
 
 function resetQuiz() {
