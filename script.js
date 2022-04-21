@@ -153,6 +153,7 @@ function showResult(answers) {
         else {
             element.innerHTML = "We recommend the <u>Large</u> Board"
         }
+    }
 }
 
   // create questions
