@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Charcuterie Finder</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    <div class="grid">
+        <div id="quiz">
+            <img class="banner" src="https://images.unsplash.com/photo-1541529086526-db283c563270?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="picture of Charcuterie board">
+
+            <h1>Find your Perfect Charcuterie</h1>
+            <hr>
+
+            <div class="questionContainer">
+                <div class="questionBox">
+                    <p id="question"></p>
+        
+                    <div id="btnCon" class="buttonContainer">
+                        <h1 class="hideH1"></h1>
+                        <button class="btn3" id="shopButton" onclick="window.location.href = 'https://sagracia08.wixsite.com/my-site/teas'">Shop Now!</button>
+                        <button class="btn2" id="resetButton" onclick="resetQuiz()">Reset Questionnaire</button>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 50px">
+            <footer>
+                
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
