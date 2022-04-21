@@ -122,18 +122,37 @@ function showResult(answers) {
     var element = document.getElementById("question");
     element.style.fontSize = "40px";
 
-    if(answers[0] = '1-2') {
-        element.innerHTML = "We recommend the <u>Mini</u> Board"
+    if(answers[0] == '1-2') {
+        if(answers[1] == 'Main Dish' || answers[2] == 'Starving') {
+            element.innerHTML = "We recommend the <u>Small</u> Board"
+        }
+        else {
+            element.innerHTML = "We recommend the <u>Mini</u> Board"
+        }
     }
-   if(answers[0] = '2-5') {
-        element.innerHTML = "We recommend the <u>Small</u> Board"
+    if(answers[0] == '2-4') {
+        if(answers[1] == 'Main Dish' || answers[2] == 'Starving') {
+            element.innerHTML = "We recommend the <u>Medium</u> Board"
+        }
+        else {
+            element.innerHTML = "We recommend the <u>Small</u> Board"
+        }
     }
-    if(answers[0] = '6-9') {
-        element.innerHTML = "We recommend the <u>Medium</u> Board"
+    if(answers[0] == '6-9') {
+        if(answers[1] == 'Main Dish' || answers[2] == 'Starving') {
+            element.innerHTML = "We recommend the <u>Large</u> Board"
+        }
+        else {
+            element.innerHTML = "We recommend the <u>Medium</u> Board"
+        }
     }
-    if(answers[0] = '10+') {
-        element.innerHTML = "We recommend the <u>Large</u> Board"
-    }
+    if(answers[0] == '10+') {
+        if(answers[1] == 'Main Dish' || answers[2] == 'Starving') {
+            element.innerHTML = "We recommend the <u>more than 1 board</u> Board"
+        }
+        else {
+            element.innerHTML = "We recommend the <u>Large</u> Board"
+        }
 }
 
   // create questions
