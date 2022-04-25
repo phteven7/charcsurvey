@@ -78,14 +78,7 @@ function displayQuestion() {
             buttonCon.append(btn)
 
             answer('btn' + i, choices[i])
-
-            // var element = document.getElementById("choice" + i);
-            // element.innerHTML = choices[i];
-            // answer("btn" + i, choices[i]);
         }
-
-        
-        // showProgress();
     }
 };
 
@@ -148,7 +141,7 @@ function showResult(answers) {
     }
     if(answers[0] == '10+') {
         if(answers[1] == 'Main Dish' || answers[2] == 'Starving') {
-            element.innerHTML = "We recommend the <u>more than 1 board</u> Board"
+            element.innerHTML = "We recommend <u>2 medium boards.</u>"
         }
         else {
             element.innerHTML = "We recommend the <u>Large</u> Board"
@@ -161,8 +154,6 @@ var quiz = new Quiz(questions);
  
 // display quiz
 displayQuestion();
-
-
 
 
 // function showProgress() {
